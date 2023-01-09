@@ -73,3 +73,26 @@
     position: static;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 7rem;
+    height: 66rem;
+    padding: 0;
+ 
+  }
+
+  .cards {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+
+    gap: 20rem;
+  }
+  .cards > * {
+    position: static;
+  }
+}

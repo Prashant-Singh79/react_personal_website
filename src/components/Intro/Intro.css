@@ -41,6 +41,8 @@
   margin-top: 3rem;
   display: flex;
   gap: 0rem;
+  width: 30%;
+  justify-content: space-evenly;
 }
 .i-icons > * {
   transform: scale(0.5);
@@ -79,6 +81,11 @@
   padding: 0;
 }
 
+
+.nameIcon{
+  letter-spacing: 1rem;
+}
+
 /* blur */
 .blur {
   position: absolute;
@@ -93,7 +100,7 @@
   filter: blur(72px);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1025px) {
   .Intro {
     flex-direction: column;
     gap: 7rem;
@@ -111,4 +118,18 @@
     /* display: none; */
     top: -7rem !important;;
   }
+
+  .i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+    width: 60%;
+    justify-content: space-evenly;
+    position: static;
+  }
+
+  .nameIcon{
+    letter-spacing: .4rem;
+  }
+  
 }

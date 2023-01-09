@@ -8,17 +8,13 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Testimonial from "./components/Testimonials/Testimonial";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import { useContext } from "react";
-import { themeContext } from "./Context";
 function App() {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
   return (
     <div
       className="App"
       style={{
-        background: darkMode ? "black" : "",
-        color: darkMode ? "white" : "",
+        background: " linear-gradient(90deg, rgba(14,14,43,1) 0%, rgba(17,252,250,1) 100%, rgba(0,212,255,1) 100%)",
+        color:  "white" ,
       }}
     >
       <Navbar />
